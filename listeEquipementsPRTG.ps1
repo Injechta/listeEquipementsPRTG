@@ -19,7 +19,28 @@
 #        \::::/    /              \::|   |                  \::/____/                \::/____/                             
 #         \::/____/                \:|   |                   ~~                       ~~                                   
 #  
-# Le 02/11/2023
+#
+<#
+    Le 02/11/2023 - Gregory EL BAJOURY
+   .DESCRIPTION
+    Ce script se connecte à l'API de PRTG Network Monitor en utilisant une URL de serveur, un nom d'utilisateur et un hash de mot de passe. 
+    Il récupère les informations sur les appareils surveillés (tels que ID, nom, groupe et hôte) et les exporte dans un fichier CSV. 
+    Le script utilise des paramètres prédéfinis pour la connexion et la récupération des données, et supporte une sortie personnalisée au format CSV.
+
+    .PARAMETERS
+    PRTGServer: URL du serveur PRTG.
+    UserName: Nom d'utilisateur pour accéder à l'API PRTG.
+    Passhash: Hash de mot de passe pour l'authentification API.
+
+    .FUNCTIONS
+    Get-PRTGDevices: Récupère les détails des appareils depuis l'API PRTG.
+    Export-DevicesToCSV: Exporte la liste des appareils dans un fichier CSV.
+    Main: Fonction principale orchestrant les opérations du script.
+
+    .EXAMPLE
+    Pour exécuter ce script, utilisez simplement la commande `.\nom_du_script.ps1` dans PowerShell. Assurez-vous que les paramètres de connexion sont correctement définis.
+#>
+
 # Paramètres de connexion au serveur PRTG
 param(
     [string]$PRTGServer = "https://prtg.ga.fr", # URL du serveur PRTG
