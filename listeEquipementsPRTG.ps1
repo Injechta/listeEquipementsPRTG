@@ -43,9 +43,9 @@
 
 # Paramètres de connexion au serveur PRTG
 param(
-    [string]$PRTGServer = "https://prtg.ga.fr", # URL du serveur PRTG
-    [string]$UserName = "user1703",            # Nom d'utilisateur pour accéder à l'API PRTG
-    [string]$Passhash = "1148022530"           # Hash de mot de passe pour l'authentification API
+    [string]$PRTGServer = "https://votreserveurPRTG", # URL du serveur PRTG
+    [string]$UserName = "votreUtilisateur",            # Nom d'utilisateur pour accéder à l'API PRTG
+    [string]$Passhash = "votrePasshash"           # Hash de mot de passe pour l'authentification API
 )
 
 # Fonction pour récupérer les appareils depuis l'API PRTG
